@@ -29,13 +29,39 @@
     <!-- INSERIMENTO DEL JS -->
     <script type="text/javascript">
       // DEFINIZIONE DELLE VARIABILI
-      var nome = prompt('Inserisci il tuo nome');
-      var cognome = prompt('Inserisci il tuo cognome');
-      var colore = prompt('Inserisci il tuo colore preferito');
+      // var nome = prompt('Inserisci il tuo nome');
+      // var cognome = prompt('Inserisci il tuo cognome');
+      // var colore = prompt('Inserisci il tuo colore preferito');
       // VISUALIZZAZIONE DEI DATI INSERITI IN CONSOLE
-      console.log(nome, cognome, colore);
+      // console.log(nome, cognome, colore);
       // VISUALIZZAZIONE DEI DATI INSERITI IN H1 senza spazio
-      document.getElementById("datiPersonali").innerHTML=(nome + cognome + colore);
+      // document.getElementById("datiPersonali").innerHTML=(nome + cognome + colore);
+      var età = parseInt(prompt('inserisci età'));
+      console.log(età, typeof età);
+      document.getElementById("datiPersonali").innerHTML = età;
+      // alert("inserire eta in int");
+
+
+      //3 marzo classe
+      <script>
+      var età = prompt("scrivi la tua età");
+      console.log("la tua età = " + età);
+      var min = 1;
+      var max = 50;
+      var val1 = Math.floor(Math.random() * 50) + 1;
+      var val2 = Math.floor(Math.random() * 50) + 1;
+      var tot = val1 + val2;
+      console.log("I valori sono " + val1 + " e " + val2);
+      if (tot%2 == 0) {
+        console.log("e la loro somma ( " + tot + " ) è un numero PARI!");
+      }
+      else {
+        console.log("e la loro somma ( " + tot + " ) è un numero DISPARI!");
+      }
+
+    </script>
+
+
     </script>
   </body>
 </html>
